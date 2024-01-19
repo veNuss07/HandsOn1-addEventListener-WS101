@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener</title>
+
+  <style>
+    /* Basic styling for the buttons */
+    button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="Hi">Button 1</button>
+  <button id="I am Venus Marie Ballesteros">Button 2</button>
+  <button id="BSIT-3A">Button 3</button>
+
+  <script>
+    // Get references to the buttons
+    const button1 = document.getElementById('Hi');
+    const button2 = document.getElementById('I am Venus Marie Ballesteros');
+    const button3 = document.getElementById('BSIT-3A');
+
+    // Functions for each button click
+    function button1Click() {
+      alert('Hi!');
+    }
+
+    function button2Click() {
+      alert('I am Venus Marie Ballesteros');
+    }
+
+    function button3Click() {
+      alert('BSIT-3A');
+    }
+
+    // Add event listeners to the buttons
+    button1.addEventListener('click', button1Click);
+    button2.addEventListener('click', button2Click);
+    button3.addEventListener('click', button3Click);
+  </script>
+
+</body>
+</html>
